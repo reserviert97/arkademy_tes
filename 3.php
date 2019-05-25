@@ -7,6 +7,8 @@ function count_vowels($words)
 
     foreach ($array as $i) {
         $huruf = strtolower($i);
+        
+        echo $huruf. ' ';
         if ($huruf == 'a' || $huruf == 'i' || $huruf == 'u' || $huruf == 'e' || $huruf == 'o') {    // pengecekan huruf hidup
             $count++;     // tambah counter jika memenuhi syarat
         }
