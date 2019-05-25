@@ -1,9 +1,6 @@
 <?php
-session_start();
 require 'core.php';
-
 $users = read();
-
 
 ?>
 
@@ -90,23 +87,22 @@ $users = read();
             </div>
 
             <?php foreach ($users as $k ) : ?>
-            <div class="row justify-content-center mt-4">
+            <div class="row justify-content-center mt-4" id="baris<?= $k['id'] ?>">
                 <div class="col-md-9">
                     <div class="card-group">
                         <div class="card shadow">
                             <div class="card-header"><?= $k['name'] ?></div>
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    <?php foreach($k['skills'] as $s) : ?>
-                                    <?= $s['name'].', '?>
-                                    <?php endforeach; ?>
-                                </h5>
+                                
+                                <?php foreach($k['skills'] as $s) : ?>
+                                    <a href="core.php?id=<?= $s['id'] ?>&delete_skill=<?= $k['id'] ?>" class="btn btn-dark btn-sm" name="delete_skill" onclick="return confirm('Yakin ?')"><?= $s['name'] ?></a>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <form action="core.php" method="post">
-                                    <div class="input-group mt-4">
+                                    <div class="input-group mt-2 mb-2">
                                         <input type="hidden" value="<?= $k['id'] ?>" name="user_id">
                                         <input type="text" class="form-control" placeholder="Skills"
                                             aria-describedby="btnTambahSkill" name="nama_skill">
@@ -116,6 +112,11 @@ $users = read();
                                                 Skill</button>
                                         </div>
                                     </div>
+                                </form>
+                            </div>
+                            <div class="card-footer text-right my-0 py-2">
+                                <form action="core.php?id=<?= $k['id'] ?>" method="post">
+                                    <button type="submit" class="btn btn-danger btn-sm" name="delete_user" onclick="return confirm('Yakin ?')">delete</button>
                                 </form>
                             </div>
                         </div>

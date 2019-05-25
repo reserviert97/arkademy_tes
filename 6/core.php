@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 $servername = "localhost";
 $username = "admin";
 $password = "admin";
@@ -9,6 +8,10 @@ $dbname = "arkademy";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
+
+/**
+ * Bagian Tambah 
+ */
 
 if (isset($_POST['tambah_user'])) {
     global $conn;
@@ -32,7 +35,7 @@ if (isset($_POST['tambah_skill'])) {
 
     if (mysqli_query($conn, $sql)){
         $_SESSION['success'] = 'ditambah';
-        header("location: 6b.php");
+        header("location: 6b.php#baris".$id);
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         die(mysqli_error($conn));
@@ -40,15 +43,43 @@ if (isset($_POST['tambah_skill'])) {
 }
 
 
+/**
+ * Bagian Delete
+ */
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    global $conn;
+
+    if (isset($_POST['delete_user'])) {
+        
+        $sql = "DELETE FROM users WHERE id = $id";
+        if (mysqli_query($conn, $sql)) {
+            $_SESSION['success'] = 'dihapus';
+            header("location: 6b.php");
+        } 
+
+    }
+
+    if (isset($_GET['delete_skill'])) {
+        
+        $sql = "DELETE FROM skills WHERE id = $id";
+        if (mysqli_query($conn, $sql)) {
+            $_SESSION['success'] = 'dihapus';
+            header("location: 6b.php#baris".$_GET['delete_skill']);
+        } 
+
+    }
+}
+
+ 
+/**
+ * Bagian Read
+ */
+
 
 function read(){
     global $conn;
-    // $sql = "SELECT users.id user_id, users.name name_programmer , skills.* 
-    //         FROM skills INNER JOIN users ON (users.id = skills.user_id)";
-
-    // $sql = "SELECT skills.*, group_concat(users.id) as prog_id
-    //         FROM skills INNER JOIN users ON (users.id = skills.user_id) GROUP BY users.id";
-
 
     // $sql = "SELECT
     //     users.id,
