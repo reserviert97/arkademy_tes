@@ -22,14 +22,27 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 # Demo Aplikasi
 
 ## Tampilan Awal
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/tampilan.png)
 
 ## Before
 ### sebelum hapus
 ![](https://github.com/reserviert97/arkademy_tes/blob/master/image/sebelum_hapus.png)
 
 ### sebelum tambah User
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/sebelum_tambah.png)
 
 ### sebelum tambah Skills
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/tambah_skills.png)
 
 ## After
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
+### setelah tambah User
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/setelah_tambah.png)
+
+### setelah tambah User
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/setelah_hapus.png)
+
+### setelah tambah Skills
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/tambah_skill_after.png)
+
