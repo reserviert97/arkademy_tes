@@ -21,9 +21,15 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 
 # Demo Aplikasi
 
+## Tampilan Awal
+
 ## Before
-### 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+### sebelum hapus
+![](https://github.com/reserviert97/arkademy_tes/blob/master/image/sebelum_hapus.png)
+
+### sebelum tambah User
+
+### sebelum tambah Skills
 
 ## After
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
