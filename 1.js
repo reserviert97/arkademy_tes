@@ -32,18 +32,20 @@ function biodata() {
     ];
 
     return {
-        biodata: {
             'name': name,
             'address': address,
             'hobbies': hobbies,
             'is_married': is_married,
             'school': school,
             'skills': skills
-        }
     }
 }
 
-console.log(biodata());
+
+const data = biodata();
+const json = document.getElementById('json');
+
+json.innerHTML = JSON.stringify(data);
 
 
 
