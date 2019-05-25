@@ -1,0 +1,5 @@
+QUERY JOIN ONE TO MANY 
+
+SELECT users.name name_programmer, COUNT(skills.id) jumlah_skill 
+FROM users JOIN skills ON users.id = skills.user_id 
+GROUP BY users.name;
