@@ -6,6 +6,7 @@ STMIK IKMI CIREBON
 
 - Webserver, MySQL
 - Or XAMPP
+- Buat Database dengan nama "arkademy" (tanpa tanda petik) lalu import dari file sql yang sudah disediakan
 
 ## REST API
 REST merupakan kependakan dari REpresentational State Transfer yang merupakan standar arsitektur berbasis web yang menggunakan protokol HTTP untuk berkomunikasi data.
@@ -18,6 +19,7 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 - Jawaban Soal nomor 1 dapat dilihat melalui index.html
 - Jawaban Soal nomor 2-5 dapat harus menggunakan webserver dan php (XAMPP)
 - Jawaban Soal nomor 6 ada pada folder "6"
+- 
 
 # Demo Aplikasi
 
@@ -40,7 +42,7 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 ### setelah tambah User
 ![](https://github.com/reserviert97/arkademy_tes/blob/master/image/setelah_tambah.png)
 
-### setelah tambah User
+### setelah tambah Hapus User
 ![](https://github.com/reserviert97/arkademy_tes/blob/master/image/setelah_hapus.png)
 
 ### setelah tambah Skills
