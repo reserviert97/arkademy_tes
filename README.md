@@ -19,7 +19,7 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 - Jawaban Soal nomor 1 dapat dilihat melalui index.html
 - Jawaban Soal nomor 2-5 dapat harus menggunakan webserver dan php (XAMPP)
 - Jawaban Soal nomor 6 ada pada folder "6"
-- 
+- Jawaban Soal nomor 6a dan 6b memerlukan webserver, php, dan mysql
 
 # Demo Aplikasi
 
@@ -37,7 +37,6 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 ![](https://github.com/reserviert97/arkademy_tes/blob/master/image/tambah_skills.png)
 
 ## After
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
 ### setelah tambah User
 ![](https://github.com/reserviert97/arkademy_tes/blob/master/image/setelah_tambah.png)
