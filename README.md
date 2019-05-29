@@ -50,4 +50,4 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 
 ## Edit GPG KEY
 
-Tambah Sesuatu
+Tambah Sesuatu lagi 
