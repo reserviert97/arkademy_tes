@@ -47,3 +47,6 @@ mayoritas developer saat ini menggunakan JSON sebagai standar pertukaran(komunik
 ### setelah tambah Skills
 ![](https://github.com/reserviert97/arkademy_tes/blob/master/image/tambah_skill_after.png)
 
+
+## Edit GPG KEY
+
